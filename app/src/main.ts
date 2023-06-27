@@ -2,9 +2,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { LicenseManager } from "ag-grid-enterprise";
-import {environments} from "./environments";
+import config from './config.json';
 
-LicenseManager.setLicenseKey(environments.agGridLicenseKey);
+LicenseManager.setLicenseKey(config.agGridLicenseKey);
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

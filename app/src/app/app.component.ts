@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ColDef, ColumnApi, ColumnState, GridApi, GridReadyEvent} from "ag-grid-community";
-import {environments} from "../environments";
 
 @Component({
   selector: 'app-root',
